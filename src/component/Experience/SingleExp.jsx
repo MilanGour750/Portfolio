@@ -1,6 +1,6 @@
 const SingleExp = ({ experience }) => {
   return (
-    <div className="md:h-[350px] md:w-[240px] sm:w-full border-2 border-orange border-dashed rounded-2xl p-4 bg-[#1f1f1f] hover:scale-105 transition-transform duration-300">
+    <div className="md:h-[350px] md:w-[240px] sm:w-[500px] sm:h-auto border-2 border-orange border-dashed rounded-2xl p-4 bg-[#1f1f1f] hover:scale-105 transition-transform duration-300 ">
       <p className="font-bold text-cyan text-lg">{experience.job}</p>
       <p className="text-orange font-semibold">{experience.company}</p>
       <p className="text-lightGrey text-sm">{experience.date}</p>

@@ -7,6 +7,7 @@ import SubHero from "./component/HeroSection/SubHero";
 import SkillsMain from "./component/MySkills/SkillsMain";
 import SkillsSub from "./component/MySkills/SkillsSub";
 import Navbar from "./component/Navbar/Navbar";
+import ProjectMain from "./component/Projects/ProjectMain";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <SkillsMain />
       <SkillsSub />
       <ExpMain />
+      <ProjectMain />
     </div>
   );
 };
