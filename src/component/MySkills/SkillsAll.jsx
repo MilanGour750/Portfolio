@@ -21,17 +21,19 @@ const skills = [
 
 const SkillsAll = () => {
   return (
-    <div>
-      <div className="flex items-center justify-center gap-2 relative max-w-[1200px] mx-auto">
-        {skills.map((item, index) => (
-          <SkillSingle
-            key={index}
-            text={item.skillName}
-            imgSvg={<item.icon />}
-          />
-        ))}
+    <>
+      <div>
+        <div className="flex items-center justify-center gap-2 relative max-w-[1200px] mx-auto">
+          {skills.map((item, index) => (
+            <SkillSingle
+              key={index}
+              text={item.skillName}
+              imgSvg={<item.icon />}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default SkillsAll;

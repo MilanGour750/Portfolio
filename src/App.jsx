@@ -1,4 +1,5 @@
 import AboutMain from "./component/AboutMe/AboutMain";
+import ExpMain from "./component/Experience/ExpMain";
 // import HelperSection from "./component/HelperSection";
 import HeroGradient from "./component/HeroSection/HeroGradient";
 import HeroMain from "./component/HeroSection/HeroMain";
@@ -18,7 +19,7 @@ const App = () => {
 
       <SkillsMain />
       <SkillsSub />
-      
+      <ExpMain />
     </div>
   );
 };
