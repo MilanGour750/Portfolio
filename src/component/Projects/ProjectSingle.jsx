@@ -20,16 +20,21 @@ const ProjectSingle = ({ name, year, align, image, link }) => {
           href={link}
           className={`text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-center ${
             align === "left" ? "md:justify-end" : "md:justify-start"
-          } `}
+          }`}
         >
           View <IoIosArrowDroprightCircle />
         </a>
       </div>
-      <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 ralative border border-white">
-        <div className="w-full h-full bg-cyan opacity-[50%] absolute left-0 top-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden"></div>
-        <img className="w-full h-full " src={image} alt="Link" />
+
+      <div className="relative max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 border border-white">
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-transparent opacity-50 hover:opacity-[0%] transition-all duration-500 z-10 pointer-events-none "></div>
+
+        {/* Image */}
+        <img className="w-full h-full object-cover" src={image} alt="Project" />
       </div>
     </div>
   );
 };
+
 export default ProjectSingle;
