@@ -33,6 +33,9 @@
   --shadow-orgmidshadow: 10px 10px 200px 150px rgba(240, 109, 79, 0.5);
 }
 
+html,
 body {
+  margin: 0;
+  padding: 0;
   background-color: #1e1917;
 }

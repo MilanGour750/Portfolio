@@ -1,8 +1,14 @@
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../FramerMotion/variants";
 
 const ProjectSingle = ({ name, year, align, image, link }) => {
   return (
-    <div
+    <motion.div
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
       className={`flex w-full sm:flex-col-reverse items-center gap-8 ${
         align === "left" ? "md:flex-row" : "md:flex-row-reverse"
       } justify-end sm:flex-col`}
@@ -33,7 +39,7 @@ const ProjectSingle = ({ name, year, align, image, link }) => {
         {/* Image */}
         <img className="w-full h-full object-cover" src={image} alt="Project" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

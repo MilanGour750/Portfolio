@@ -1,5 +1,7 @@
 import SingleExp from "./SingleExp";
 import { FaArrowRight } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../FramerMotion/variants";
 
 const experiences = [
   {
@@ -31,7 +33,14 @@ const AllExp = () => {
         <div key={index} className="flex items-center gap-6">
           <SingleExp experience={exp} />
           {index < experiences.length - 1 && (
-            <FaArrowRight className="text-4xl text-orange hidden lg:block" />
+            <motion.div
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0 }}
+            >
+              <FaArrowRight className="text-4xl text-orange hidden lg:block" />
+            </motion.div>
           )}
         </div>
       ))}

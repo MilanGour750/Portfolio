@@ -14,7 +14,7 @@ import { Toaster } from "sonner";
 
 const App = () => {
   return (
-    <div className="font-body">
+    <div className="font-body w-full overflow-hidden">
       <Toaster richColors position="top-center" />
 
       <Navbar />

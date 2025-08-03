@@ -6,6 +6,8 @@ import { SiTypescript } from "react-icons/si";
 import { TbCloudComputing } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { GrCloudComputer } from "react-icons/gr";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../FramerMotion/variants";
 
 const skills = [
   { icon: FaJava, skillName: "Java" },
@@ -23,10 +25,17 @@ const SkillsAllSM = () => {
     <>
       <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
         {skills.map((item, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}
+            key={index}
+            className="flex flex-col items-center"
+          >
             <item.icon className="text-7xl text-orange" />
             <p className="text-white text-center mt-4">{item.skillName}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </>

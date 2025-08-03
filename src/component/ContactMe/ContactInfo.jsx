@@ -9,8 +9,8 @@ const ContactInfo = () => {
   return (
     <>
       <div className="flex flex-col gap-4 text-white">
-        <SingleInfo text="milan.gour97XXX@gmail.com" Img={MdEmail} />
-        <SingleInfo text="+91 903938XXXX" Img={RiContactsFill} />
+        <SingleInfo text="milan.gour87750@gmail.com" Img={MdEmail} />
+        <SingleInfo text="+91 9039386195" Img={RiContactsFill} />
         <SingleInfo text="Khandwa, Madhya Pradesh" Img={FaLocationDot} />
         
       </div>
