@@ -11,11 +11,13 @@ import SkillsSub from "./component/MySkills/SkillsSub";
 import Navbar from "./component/Navbar/Navbar";
 import ProjectMain from "./component/Projects/ProjectMain";
 import { Toaster } from "sonner";
+import ScrollIndicator from "./component/ScrollIndicatore";
 
 const App = () => {
   return (
     <div className="font-body w-full overflow-hidden">
       <Toaster richColors position="top-center" />
+      <ScrollIndicator />
 
       <Navbar />
       <HeroMain />
