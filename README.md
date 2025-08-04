@@ -1,12 +1,42 @@
-# React + Vite
+# 🌐 Milan Gour's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal **portfolio website** built using **React**, **Tailwind CSS**, and **Vite**. It showcases my skills, projects, experience, and contact information with smooth animations and scroll effects.
 
-Currently, two official plugins are available:
+### 🚀 Live Demo
+🔗 [Visit the Portfolio](https://portfoliowebsite-sigma-eight.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📁 GitHub Repository
+🔗 [View on GitHub](https://github.com/MilanGour750)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** [React](https://reactjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+
+## 📦 Libraries Used
+
+- 📜 **[react-scroll](https://www.npmjs.com/package/react-scroll)** – Smooth scroll navigation between sections.
+- 💌 **[emailJS](https://www.emailjs.com/)** – Contact form integration to send messages via email without a backend.
+- 🎞 **[framer-motion](https://www.framer.com/motion/)** – Animation and transitions for UI elements.
+
+---
+
+## 📸 Features
+
+- Responsive and mobile-friendly layout
+- Smooth scrolling navigation
+- Animated components using Framer Motion
+- Contact form integrated with EmailJS
+- Clean and modern UI using Tailwind CSS
+
+
+## 🧑‍💻 How to Run Locally
+
+```bash
+git clone https://github.com/MilanGour750/portfolio-website.git
+cd portfolio-website
+npm install
+npm run dev
